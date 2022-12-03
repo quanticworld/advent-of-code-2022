@@ -20,7 +20,8 @@ score_dict['C']['X'] = (6, 'Y')
 score_dict['C']['Y'] = (0, 'Z')
 score_dict['C']['Z'] = (3, 'X')
 
-games = open("day2.txt", "r").readlines()
+games = open("day2/data.txt", "r").readlines()
+
 
 def part1():
     total_score = 0

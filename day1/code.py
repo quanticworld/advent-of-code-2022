@@ -1,4 +1,5 @@
-data = open("day1.txt", "r").read().replace("\n\n", ",").replace("\n", "+")[:-1]
+data = open("day1/data.txt", "r").read().replace("\n\n", ",").replace("\n", "+")[:-1]
+
 
 def part1():
     return max(map(eval, data.split(',')))
