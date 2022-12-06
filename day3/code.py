@@ -1,7 +1,6 @@
 import textwrap
 from functools import reduce
 from operator import add
-
 # data = open("day3/test.txt", "r").readlines()  # test data
 data = open("day3/data.txt", "r").readlines()
 

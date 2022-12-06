@@ -14,7 +14,7 @@ from day6.code import part2 as d6_2
 
 
 if __name__ == '__main__':
-    num_runs = 1
+    num_runs = 100
     day1_1_time = timeit.Timer(d1_1).timeit(num_runs) / num_runs * 1000
     day1_2_time = timeit.Timer(d1_2).timeit(num_runs) / num_runs * 1000
     day2_1_time = timeit.Timer(d2_1).timeit(num_runs) / num_runs * 1000
