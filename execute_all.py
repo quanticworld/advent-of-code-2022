@@ -11,6 +11,8 @@ from day5.code import part1 as d5_1
 from day5.code import part2 as d5_2
 from day6.code import part1 as d6_1
 from day6.code import part2 as d6_2
+from day7.code import part1 as d7_1
+from day7.code import part2 as d7_2
 
 
 if __name__ == '__main__':
@@ -27,6 +29,8 @@ if __name__ == '__main__':
     day5_2_time = timeit.Timer(d5_2).timeit(num_runs) / num_runs * 1000
     day6_1_time = timeit.Timer(d6_1).timeit(num_runs) / num_runs * 1000
     day6_2_time = timeit.Timer(d6_2).timeit(num_runs) / num_runs * 1000
+    day7_1_time = timeit.Timer(d7_1).timeit(num_runs) / num_runs * 1000
+    day7_2_time = timeit.Timer(d7_2).timeit(num_runs) / num_runs * 1000
 
     pretty_print_table = \
         [
@@ -44,6 +48,8 @@ if __name__ == '__main__':
             ['day5_2', d5_2(), round(day5_2_time, 6)],
             ['day6_1', d6_1(), round(day6_1_time, 6)],
             ['day6_2', d6_2(), round(day6_2_time, 6)],
+            ['day7_1', d7_1(), round(day7_1_time, 6)],
+            ['day7_2', d7_2(), round(day7_2_time, 6)],
         ]
     for row in pretty_print_table:
         print('| {:^10} | {:>10} | {:>20} |'.format(*row))
