@@ -13,10 +13,12 @@ from day6.code import part1 as d6_1
 from day6.code import part2 as d6_2
 from day7.code import part1 as d7_1
 from day7.code import part2 as d7_2
+from day8.code import part1 as d8_1
+from day8.code import part2 as d8_2
 
 
 if __name__ == '__main__':
-    num_runs = 100
+    num_runs = 1
     day1_1_time = timeit.Timer(d1_1).timeit(num_runs) / num_runs * 1000
     day1_2_time = timeit.Timer(d1_2).timeit(num_runs) / num_runs * 1000
     day2_1_time = timeit.Timer(d2_1).timeit(num_runs) / num_runs * 1000
@@ -31,6 +33,8 @@ if __name__ == '__main__':
     day6_2_time = timeit.Timer(d6_2).timeit(num_runs) / num_runs * 1000
     day7_1_time = timeit.Timer(d7_1).timeit(num_runs) / num_runs * 1000
     day7_2_time = timeit.Timer(d7_2).timeit(num_runs) / num_runs * 1000
+    day8_1_time = timeit.Timer(d8_1).timeit(num_runs) / num_runs * 1000
+    day8_2_time = timeit.Timer(d8_2).timeit(num_runs) / num_runs * 1000
 
     pretty_print_table = \
         [
@@ -50,6 +54,8 @@ if __name__ == '__main__':
             ['day6_2', d6_2(), round(day6_2_time, 6)],
             ['day7_1', d7_1(), round(day7_1_time, 6)],
             ['day7_2', d7_2(), round(day7_2_time, 6)],
+            ['day8_1', d8_1(), round(day8_1_time, 6)],
+            ['day8_2', d8_2(), round(day8_2_time, 6)],
         ]
     for row in pretty_print_table:
         print('| {:^10} | {:>10} | {:>20} |'.format(*row))

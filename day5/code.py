@@ -1,4 +1,4 @@
-from utils import init_list_of_objects
+from common.utils import init_list_of_objects
 
 # data = open("day5/test.txt", "r").read().splitlines()  # test data
 data = open("day5/data.txt", "r").read().splitlines()
@@ -13,7 +13,7 @@ def part2():
 
 
 def execute(keep_order):
-    stacks = init_list_of_objects(int((len(data[0]) + 1) / 4))
+    stacks = init_list_of_objects(int((len(data[0]) + 1) / 4), list())
     for row in data:
         if row and (row[0] == '[' or row[0] == ' ') and row[0:2] != ' 1':
             add_stack(row, stacks)

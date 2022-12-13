@@ -2,7 +2,7 @@ import re
 
 from anytree import PreOrderIter
 from numpy import sort
-from day7.nodes import FileNode
+from common.nodes import FileNode
 
 # data = open("day7/test.txt", "r").read().splitlines()[1:]  # test data
 data = open("day7/data.txt", "r").read().splitlines()[1:]
